@@ -1,0 +1,9 @@
+c:\users\felipe.andrade\documents\visual studio 2013\Projects\Banco\Banco\bin\Debug\Banco.exe.config
+c:\users\felipe.andrade\documents\visual studio 2013\Projects\Banco\Banco\obj\Debug\Banco.csprojResolveAssemblyReference.cache
+c:\users\felipe.andrade\documents\visual studio 2013\Projects\Banco\Banco\obj\Debug\Banco.Menu.resources
+c:\users\felipe.andrade\documents\visual studio 2013\Projects\Banco\Banco\obj\Debug\Banco.Properties.Resources.resources
+c:\users\felipe.andrade\documents\visual studio 2013\Projects\Banco\Banco\obj\Debug\Banco.csproj.GenerateResource.Cache
+c:\users\felipe.andrade\documents\visual studio 2013\Projects\Banco\Banco\bin\Debug\Banco.exe
+c:\users\felipe.andrade\documents\visual studio 2013\Projects\Banco\Banco\bin\Debug\Banco.pdb
+c:\users\felipe.andrade\documents\visual studio 2013\Projects\Banco\Banco\obj\Debug\Banco.exe
+c:\users\felipe.andrade\documents\visual studio 2013\Projects\Banco\Banco\obj\Debug\Banco.pdb
