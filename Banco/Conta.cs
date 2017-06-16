@@ -11,26 +11,39 @@ namespace Banco
         public int numeroDaConta1 = 1;
         public string titularDaConta1 = "";
         public double saldo;
+        public int idade;
 
-        // Existem duas Formas de se fazer um método, usando o void e o bool.
-        // o void não retorna nenhum valor de dentro do método, já o bool retorna.
-        /*
-        public void Saca(double Valor)
-        {
-            if(this.saldo >= Valor)
-            {
-                this.saldo -= Valor;
-            }
-        }
-        */
         public bool Saca(double Valor)
         {
-            if (this.saldo >= Valor)
+            if(idade < 17)
+            {
+                return false;
+            }
+            else if (idade >= 18)
             {
                 this.saldo -= Valor;
                 return true;
             }
-            return false;
+            else if (Valor <= 200)
+            {
+                return false;
+            }
+            else if (saldo >= Valor)
+            {
+                this.saldo -= Valor;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+            /*if (this.saldo >= Valor)
+            {
+                this.saldo -= Valor;
+                return true;
+            }
+            return false;*/
         }
 
         public void Deposita(double valor)

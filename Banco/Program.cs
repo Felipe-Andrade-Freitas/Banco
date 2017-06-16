@@ -6,8 +6,9 @@ using System.Windows.Forms;
 
 namespace Banco
 {
-    static class Program
+    class Program
     {
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
