@@ -23,7 +23,7 @@ namespace Banco
             Conta Felipe = new Conta();
             Felipe.numeroDaConta1 = 1;
             Felipe.titularDaConta1 = "Felipe Andrade";
-            Felipe.idade = 17;
+            Felipe.idade = true;
 
             // Irei depositar na conta de Felipe como saldo inicial o valor de 1000.0
             Felipe.Deposita(1000.0);
@@ -41,7 +41,7 @@ namespace Banco
             Conta Elaine = new Conta();
             Elaine.numeroDaConta1 = 2;
             Elaine.titularDaConta1 = "Elaine Cristina";
-            Elaine.idade = 42;
+            Elaine.idade = false;
 
             // Irei depositar na conta de Elaine como saldo inicial o valor de 1000.0
             Elaine.Deposita(1000.0);

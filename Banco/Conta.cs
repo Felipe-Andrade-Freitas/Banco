@@ -11,15 +11,15 @@ namespace Banco
         public int numeroDaConta1 = 1;
         public string titularDaConta1 = "";
         public double saldo;
-        public int idade;
+        public bool idade;
 
         public bool Saca(double Valor)
         {
-            if(idade < 17)
+            if(idade)
             {
                 return false;
             }
-            else if (idade >= 18)
+            else if (Valor >= )
             {
                 this.saldo -= Valor;
                 return true;
