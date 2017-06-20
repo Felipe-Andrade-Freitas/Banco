@@ -26,15 +26,17 @@ namespace Banco
             Felipe.idade = true;
 
             // Irei depositar na conta de Felipe como saldo inicial o valor de 1000.0
-            Felipe.Deposita(1000.0);
+            Felipe.Deposita(1000);
             // Felipe sacou o valor de 100.0 e exibi o valor de seu novo saldo
-            if (Felipe.Saca(100.0))
-            {
-                MessageBox.Show("Felipe, saque realizado com sucesso.\nSeu saldo é: " + Felipe.saldo);
+            
+            
+            if (result != "")
+	        {
+                MessageBox.Show(result);
             }
             else
             {
-                MessageBox.Show("Felipe, saldo Insuficiente.\nSeu saldo é: " + Felipe.saldo);
+                MessageBox.Show("saque realizado com sucesso");
             }
 
             // Criando Conta de Elaine
@@ -44,10 +46,10 @@ namespace Banco
             Elaine.idade = false;
 
             // Irei depositar na conta de Elaine como saldo inicial o valor de 1000.0
-            Elaine.Deposita(1000.0);
+            Elaine.Deposita(1000);
 
             // Elaine transferiu o valor de 100.0 para Felipe
-            Elaine.Transfere(100.0, Felipe);
+            Elaine.Transfere(100, 42, Felipe);
 
             // Irei exibir o saldo de Elaine
             MessageBox.Show("Elaine, transferencia realizada com sucesso. \nSeu saldo é: " + Elaine.saldo);
@@ -56,7 +58,8 @@ namespace Banco
             MessageBox.Show("Elaine, o saldo de Felipe é: " + Felipe.saldo);
 
             // Elaine sacou o valor de 100.0 e exibi o valor de seu novo saldo
-            if (Elaine.Saca(1000.0))
+            
+            if (Elaine.sacar(100, 42))
             {
                 MessageBox.Show("Elaine, saque realizado com sucesso.\nSeu saldo é: " + Elaine.saldo);
             }

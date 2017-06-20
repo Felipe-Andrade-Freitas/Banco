@@ -10,50 +10,57 @@ namespace Banco
     {
         public int numeroDaConta1 = 1;
         public string titularDaConta1 = "";
-        public double saldo;
+        public int saldo;
         public bool idade;
 
-        public bool Saca(double Valor)
+        bool possuiIdadeMenor(int idade)
         {
-            if(idade)
-            {
-                return false;
-            }
-            else if (Valor >= )
-            {
-                this.saldo -= Valor;
-                return true;
-            }
-            else if (Valor <= 200)
-            {
-                return false;
-            }
-            else if (saldo >= Valor)
-            {
-                this.saldo -= Valor;
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-
-            /*if (this.saldo >= Valor)
-            {
-                this.saldo -= Valor;
-                return true;
-            }
-            return false;*/
+            return idade < 18;
         }
 
-        public void Deposita(double valor)
+        bool saldoMaiorPermitido(int valor)
+        {
+            return valor >= 200;
+        }
+
+        public string sacar(int valor, int idade) 
+        {
+
+            if (possuiIdadeMenor(idade))
+            {
+                return "Idade invalida";
+            }
+
+            if (saldoMaiorPermitido(valor))
+            {
+                return "VALOR INVALIDO";
+            }
+
+            /*if (this.saldo >= valor)
+            {
+                this.saldo -= valor;
+            }*/
+            else
+            {
+                return "OK";
+            }
+        }
+
+        public void result(int valor, int idade)
+        {
+            string result = sacar(valor, idade);
+        }
+
+        public void Deposita(int valor)
         {
             this.saldo += valor;
         }
-        public void Transfere(double valor, Conta destino)
+
+        public void Transfere(int valor, int idade, Conta destino)
         {
-            if(this.Saca(valor))
+            if(true)
             {
+                this.sacar(valor, idade);
                 destino.Deposita(valor);
             }
         }
