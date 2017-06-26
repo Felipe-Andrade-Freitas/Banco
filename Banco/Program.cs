@@ -18,7 +18,7 @@ namespace Banco
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Menu());
-            //222
+            //2222
         }
     }
 }
